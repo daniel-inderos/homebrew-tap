@@ -15,7 +15,9 @@ cask "storagebar" do
 
   caveats <<~EOS
     StorageBar is ad-hoc signed, not notarized. If macOS blocks the first
-    launch, either reinstall with --no-quarantine or run:
+    launch, run:
       xattr -cr /Applications/StorageBar.app
+    or install with quarantine disabled:
+      HOMEBREW_CASK_OPTS=--no-quarantine brew install --cask daniel-inderos/tap/storagebar
   EOS
 end
