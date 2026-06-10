@@ -7,7 +7,7 @@ cask "storagebar" do
   desc "Menu bar app showing disk space, memory, CPU, and battery info"
   homepage "https://github.com/daniel-inderos/storage-menu-bar"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "StorageBar.app"
 
