@@ -1,6 +1,6 @@
 cask "storagebar" do
-  version "1.3.0"
-  sha256 "990aef73d7f3442b925788d7478045eb67a92a41934a21736dad0869a1cb56a1"
+  version "1.3.1"
+  sha256 "6583d37fae2d0fe08199b019b39ba52046be059af9adf525731d664bd16ff035"
 
   url "https://github.com/daniel-inderos/storage-menu-bar/releases/download/v#{version}/StorageBar.zip"
   name "StorageBar"
