@@ -12,12 +12,4 @@ cask "storagebar" do
   app "StorageBar.app"
 
   zap trash: "~/Library/Preferences/local.storagebar.app.plist"
-
-  caveats <<~EOS
-    StorageBar is ad-hoc signed, not notarized. If macOS blocks the first
-    launch, run:
-      xattr -cr /Applications/StorageBar.app
-    or install with quarantine disabled:
-      HOMEBREW_CASK_OPTS=--no-quarantine brew install --cask daniel-inderos/tap/storagebar
-  EOS
 end
